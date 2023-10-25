@@ -1,7 +1,9 @@
 from imdb import IMDb
+import os
 
-inputFile = input("Enter the name of the input file: ")
-outputFile = inputFile.replace(".txt", "Links.txt")
+inputFile = '../input/' + input("Enter the name of the input file: ")
+choice, _ = os.path.splitext(os.path.basename(inputFile))
+outputFile = choice + "Links.txt"
 
 ia = IMDb()
 imdbLinks = {}
@@ -9,7 +11,6 @@ imdbLinks = {}
 with open(inputFile, "r") as inputData:
     data = inputData.read().splitlines()
 
-choice = inputFile.split('.')[0]
 for field in data:
     if (choice == "actors"):
         searchResults = ia.search_person(field)
