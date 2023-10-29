@@ -18,4 +18,3 @@
 - [Samuel Jackson](https://www.imdb.com/name/nm0000168/)
 - [Jason Statham](https://www.imdb.com/name/nm0005458/)
 - [Chris Pratt](https://www.imdb.com/name/nm0695435/)
-- [Chris Pra](https://www.imdb.com/name/nm0695435/)

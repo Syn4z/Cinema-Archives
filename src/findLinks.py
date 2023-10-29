@@ -1,34 +1,27 @@
 from imdb import IMDb
-import os
 
-inputFile = '../input/' + input("Enter the name of the input file: ")
-choice, _ = os.path.splitext(os.path.basename(inputFile))
-outputFile = choice + "Links.txt"
 
-ia = IMDb()
-imdbLinks = {}
+def getImdbLinks(inputFile, choice):
+    ia = IMDb()
+    imdbLinks = {}
 
-with open(inputFile, "r") as inputData:
-    data = inputData.read().splitlines()
+    with open(inputFile, "r") as inputData:
+        data = inputData.read().splitlines()
 
-for field in data:
-    if (choice == "actors"):
-        searchResults = ia.search_person(field)
-    elif (choice == "movies" or choice == "shows"):
-        searchResults = ia.search_movie(field)  
+    for field in data:
+        if choice == "actors":
+            searchResults = ia.search_person(field)
+        elif choice == "movies" or choice == "shows":
+            searchResults = ia.search_movie(field)
 
-    if searchResults:
-        data = searchResults[0]
-        if (choice == "actors"):
-            imdbId = data.personID
-            imdbLink = f"https://www.imdb.com/name/nm{imdbId}/"
-        elif (choice == "movies" or choice == "shows"):
-            imdbId = data.movieID    
-            imdbLink = f"https://www.imdb.com/title/tt{imdbId}/"
-        imdbLinks[field] = imdbLink
+        if searchResults:
+            data = searchResults[0]
+            if choice == "actors":
+                imdbId = data.personID
+                imdbLink = f"https://www.imdb.com/name/nm{imdbId}/"
+            elif choice == "movies" or choice == "shows":
+                imdbId = data.movieID
+                imdbLink = f"https://www.imdb.com/title/tt{imdbId}/"
+            imdbLinks[field] = imdbLink
 
-with open(outputFile, "w") as file:
-    for field, imdbLink in imdbLinks.items():
-        file.write(f"{field}: {imdbLink}\n")
-
-print(f"IMDb links for have been saved to {outputFile}.")
+    return imdbLinks
