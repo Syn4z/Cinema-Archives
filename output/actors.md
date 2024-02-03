@@ -14,7 +14,3 @@
 - [Tobey Maguire](https://www.imdb.com/name/nm0001497/)
 - [Jason Statham](https://www.imdb.com/name/nm0005458/)
 - [Chris Pratt](https://www.imdb.com/name/nm0695435/)
-- [Ryan Gosling](https://www.imdb.com/name/nm0331516/)
-- [Cillian Murphy](https://www.imdb.com/name/nm0614165/)
-- [Robert Downey Jr.](https://www.imdb.com/name/nm0000375/)
-- [Samuel L. Jackson](https://www.imdb.com/name/nm0000168/)

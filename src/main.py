@@ -13,5 +13,5 @@ if __name__ == "__main__":
         for field, imdbLink in imdbLinks.items():
             file.write(f"{field}: {imdbLink}\n")
 
-    outputData = '../data/' + re.match(r"([^A-Z]*)", linksFile).group(0) + '.md'
+    outputData = '../output/' + re.match(r"([^A-Z]*)", linksFile).group(0) + '.md'
     createMdFile(linksFile, outputData)
