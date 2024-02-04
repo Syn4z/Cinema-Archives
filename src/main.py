@@ -4,7 +4,7 @@ import os
 import re
 
 if __name__ == "__main__":
-    inputFile = '../input/' + input("Enter the name of the input file: ")
+    inputFile = '../input/' + input("Enter the name of the input file: ")+'.txt'
     choice, _ = os.path.splitext(os.path.basename(inputFile))
     linksFile = choice + "Links.txt"
     imdbLinks = getImdbLinks(inputFile, choice)

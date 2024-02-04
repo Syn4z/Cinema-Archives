@@ -4,7 +4,7 @@ def getImdbLinks(inputFile, choice):
     ia = IMDb()
     imdbLinks = {}
 
-    with open(inputFile+'.txt', "r") as inputData:
+    with open(inputFile, "r") as inputData:
         data = inputData.read().splitlines()
 
     for field in data:
