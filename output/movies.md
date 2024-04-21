@@ -126,7 +126,6 @@
 - [LaLa Land](https://www.imdb.com/title/tt1882671/)
 - [Air](https://www.imdb.com/title/tt16419074/)
 - [Tenet](https://www.imdb.com/title/tt6723592/)
-- [The Whale](https://www.imdb.com/title/tt13833688/)
 - [Divergent](https://www.imdb.com/title/tt1840309/)
 - [The Big Short](https://www.imdb.com/title/tt1596363/)
 - [Source Code](https://www.imdb.com/title/tt0945513/)
