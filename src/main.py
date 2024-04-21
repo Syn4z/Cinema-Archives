@@ -1,5 +1,5 @@
-from findLinks import getImdbLinks
-from formatData import createMdFile
+from findLinks import *
+from formatData import *
 import os
 import re
 
