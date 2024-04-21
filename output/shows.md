@@ -6,3 +6,5 @@
 - [Peaky Blinders](https://www.imdb.com/title/tt2442560/)
 - [House of the Dragon](https://www.imdb.com/title/tt11198330/)
 - [The Last of Us](https://www.imdb.com/title/tt3581920/)
+- [Gen V](https://www.imdb.com/title/tt13159924/)
+- [Fallout](https://www.imdb.com/title/tt12637874/)

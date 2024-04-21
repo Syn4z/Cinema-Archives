@@ -2,3 +2,4 @@ src/*.txt
 .idea/
 venv/
 *__pycache__/
+input/
